@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "recurrence-field-harness"
+version = "1.0.0"
+description = "Deterministic recurrence-field generation, parameter sweeps, and image-structure analysis."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.26",
+  "matplotlib>=3.8",
+  "Pillow>=10.0",
+]
+
+[project.optional-dependencies]
+opengl = ["pyqtgraph>=0.13", "PyQt6>=6.6", "PyOpenGL>=3.1"]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+recurrence-harness = "recurrence_harness.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

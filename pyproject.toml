@@ -13,13 +13,9 @@ dependencies = [
   "matplotlib>=3.8",
   "Pillow>=10.0",
 ]
-
-[project.optional-dependencies]
-opengl = ["pyqtgraph>=0.13", "PyQt6>=6.6", "PyOpenGL>=3.1"]
-dev = ["pytest>=8.0"]
-
-[project.scripts]
+`n[project.scripts]
 recurrence-harness = "recurrence_harness.cli:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
+

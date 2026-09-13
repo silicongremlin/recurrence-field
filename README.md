@@ -21,3 +21,8 @@ Private research artifact pending publication review. Interfaces may evolve as t
 
 
 
+
+## License
+
+MIT. Fork it, modify it, and build your own version. This repository is provided as-is and carries no maintenance or support commitment.
+
